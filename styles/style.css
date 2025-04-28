@@ -65,6 +65,9 @@ a:hover {
 }
 
 footer {
+    padding: 2px;
+    font-size: 14px;
     background-color: black;
     color: white;
+    height: 2.8vh;
 }

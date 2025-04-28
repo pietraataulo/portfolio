@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+/* Media query para telas grandes */
+@media screen and (min-width: 650px){
+
+    #menu {
+        display: none;
+    }
+
+    .texto p {
+        margin-top: 20px;
+    }
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -19,27 +31,44 @@ html {
 }
 
 header {
-    height: 600px;
+    height: 100vh;
+}
+
+footer {
+    height: 20vh;
 }
 
 
 .texto {
-    height: 60%;
-    height: 300px;
+    height: 70%;
+    height: 40vh;
     background-color: #faf3ff;
     padding: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.378);
-
-    display: flex;
-   
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.233);
     
 }
+
+#texto1, #texto2 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.texto p {
+    font-size: 1.2em;
+    width: 30vw;
+    
+}
+
 
 .imagem-fundo {
     background-image: url(../imagens/temporario-port.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center bottom;
+
+    box-shadow: inset 1px -4px 10px rgba(0, 0, 0, 0.316);
 
     height: 300px;
     
@@ -55,10 +84,12 @@ header {
 .imagem-lado {
     border-radius: 3px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.27);
+
+    /*margin: 10px;*/
 }
 
 .material-symbols-outlined {
-    
+    float: right;
     margin: 10px;
     background-color: #faf3ff;
     border-radius: 2px;
