@@ -30,6 +30,7 @@ header {
     /*margin-top: 120px; */
     color: var(--magnolia);
 }
+
 nav {
     display: flex;
     flex-direction: column;
