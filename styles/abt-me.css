@@ -27,7 +27,7 @@ header {
 header img {
     margin-left: 50px;
     margin-top: 20px;
-    width: 450px;
+    width: 400px;
     
     
 }
@@ -38,8 +38,14 @@ header p {
     color: #f3e1ff;
 }
 
+a {
+    display: none;
+}
+
+
+
 footer {
-    height: 20vh;
+    height: 30vh;
 }
 
 .top {
@@ -125,8 +131,6 @@ footer {
         font-size: 20px;
     }
 
-
-
     header p {
         font-size: 1.2em;
     }
@@ -135,9 +139,42 @@ footer {
         display: flex;
         justify-content: space-between;
         
-    
-        flex: 1 1 300px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        width: 160px;
         
+        margin-top: 40px;
+
+    }
+    
+    a { 
+        display: block;
+        margin-left: 50px;
+        box-sizing: border-box;
+        border: 2px solid #dea0ffc3;
+        /*border-width: 2px;
+        /*background-color: #f3dcff;*/
+        color: #f3e1ff;
+    
+        text-decoration: none;
+        font-size: 20px;
+    
+        border-radius: 30px;
+        padding: 16px;  
+        
+        transition-duration: 0.5s;
+    }
+
+    a:hover {
+        background-color: #f3dcff;
+        box-shadow: -3px 5px 3px rgba(0, 0, 0, 0.242);
+        color: #3f0c6e;
+    
+        transition-duration: 0.5s;
     }
 }
 
