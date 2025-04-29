@@ -36,6 +36,7 @@ header p {
     max-width: 50%;
     font-size: 1em;
     color: #f3e1ff;
+    line-height: 29px;
 }
 
 a {
@@ -61,14 +62,12 @@ footer {
 
     flex-wrap: wrap;
     
-    
 }
 
 #texto1, #texto2 {
     display: flex;
     justify-content: center;
     
-
     flex: 1 1 300px;
     
 }
@@ -76,8 +75,8 @@ footer {
 
 .texto p {
     font-size: 16px;
-    width: 30vw;
-
+    width: 350px; /* Arrumar isso */
+    line-height: 25px;
     margin: 40px;
     
 }
@@ -129,6 +128,8 @@ footer {
     .texto p {
         margin-top: 20px;
         font-size: 20px;
+        width: 300px;
+        line-height: 35px;
     }
 
     .imagem-lado {
@@ -137,6 +138,7 @@ footer {
 
     header p {
         font-size: 1.2em;
+        line-height: 40px;
     }
 
     #texto1, #texto2 {
