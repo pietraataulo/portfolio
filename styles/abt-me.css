@@ -25,18 +25,20 @@ header {
 }
 
 header img {
-    margin-left: 50px;
-    margin-top: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
     width: 400px;
     
     
 }
 
 header p {
-    max-width: 50%;
+    width: 250px;
     font-size: 1em;
     color: #f3e1ff;
     line-height: 29px;
+
+  
 }
 
 a {
@@ -124,7 +126,7 @@ footer {
     #menu {
         display: none;
     }
-
+    
     .texto p {
         margin-top: 20px;
         font-size: 20px;
@@ -136,9 +138,16 @@ footer {
         width: 300px;
     }
 
+    .imagem-fundo {
+        height: 400px;
+    }
+
     header p {
         font-size: 1.2em;
         line-height: 40px;
+
+        width: 50%;
+        
     }
 
     #texto1, #texto2 {
@@ -153,13 +162,13 @@ footer {
         margin: 0;
         width: 160px;
         
-        margin-top: 40px;
+        margin-top: 30px;
 
     }
     
     a { 
         display: block;
-        margin-left: 50px;
+        margin-left: 30px;
         box-sizing: border-box;
         border: 2px solid #dea0ffc3;
         /*border-width: 2px;
