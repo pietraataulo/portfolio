@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 * {
     margin: 0px;
@@ -20,7 +20,8 @@ html {
 }
 
 header {
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 50px;
     
 }
 
@@ -41,8 +42,40 @@ header p {
   
 }
 
-a {
-    display: none;
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 160px;
+    
+    margin-top: 30px;
+
+}
+
+a { 
+    display: block;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border: 2px solid #dea0ffc3;
+    /*border-width: 2px;
+    /*background-color: #f3dcff;*/
+    color: #f3e1ff;
+
+    text-decoration: none;
+    font-size: 15px;
+
+    border-radius: 30px;
+    padding: 16px;  
+    
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    background-color: #f3dcff;
+    box-shadow: -3px 5px 3px rgba(0, 0, 0, 0.242);
+    color: #3f0c6e;
+
+    transition-duration: 0.5s;
 }
 
 
@@ -62,13 +95,15 @@ footer {
     padding: 5vh;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.233);
 
-    flex-wrap: wrap;
+    
     
 }
 
 #texto1, #texto2 {
     display: flex;
     justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
     
     flex: 1 1 300px;
     
@@ -89,18 +124,16 @@ footer {
     background-size: cover;
     background-attachment: fixed;
     background-position: center bottom;
-
-    box-shadow: inset 1px -4px 10px rgba(0, 0, 0, 0.316);
-
-    height: 300px;
     
-}
-
-.texto-imagem {
+    padding-bottom: 20px;
     color: #faf3ff;
-    text-align: center;
-    padding-top: 260px;
-    
+    box-shadow: inset 1px -4px 10px rgba(0, 0, 0, 0.316);
+    height: 300px;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
 }
 
 .imagem-lado {
@@ -117,6 +150,21 @@ footer {
     background-color: #faf3ff;
     border-radius: 2px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.241);
+
+}
+
+#menu {
+    display: none;
+}
+
+.jogos {
+    color: rgb(156, 61, 215);
+    font-family: "Pixelify Sans", sans-serif;
+
+}
+
+.palavra-especial {
+    color: rgb(156, 61, 215);
 }
 
 
@@ -130,7 +178,7 @@ footer {
     .texto p {
         margin-top: 20px;
         font-size: 20px;
-        width: 300px;
+        width: 550px;
         line-height: 35px;
     }
 
@@ -150,46 +198,17 @@ footer {
         
     }
 
+    a {
+        margin-left: 40px;
+        font-size: 20px;
+    }
+
     #texto1, #texto2 {
         display: flex;
         justify-content: space-between;
         
     }
 
-    nav {
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-        width: 160px;
-        
-        margin-top: 30px;
 
-    }
-    
-    a { 
-        display: block;
-        margin-left: 30px;
-        box-sizing: border-box;
-        border: 2px solid #dea0ffc3;
-        /*border-width: 2px;
-        /*background-color: #f3dcff;*/
-        color: #f3e1ff;
-    
-        text-decoration: none;
-        font-size: 20px;
-    
-        border-radius: 30px;
-        padding: 16px;  
-        
-        transition-duration: 0.5s;
-    }
-
-    a:hover {
-        background-color: #f3dcff;
-        box-shadow: -3px 5px 3px rgba(0, 0, 0, 0.242);
-        color: #3f0c6e;
-    
-        transition-duration: 0.5s;
-    }
 }
 
