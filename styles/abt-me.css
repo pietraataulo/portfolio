@@ -1,6 +1,10 @@
 @charset "UTF-8";
+
+/* Importação da fonte pixelada */
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
+
+/* Configuração global */
 * {
     margin: 0px;
     padding: 0px;
@@ -9,28 +13,26 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Configuração do html (cor de fundo) */
 html {
     background: linear-gradient(45deg, #5e1071, #551393, #806aff);
     color: #2f2036;
-
-    
+  
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
+/* Configurações do cabeçalho (imagem e parágrafo) */
 header {
     min-height: 100vh;
-    padding-bottom: 50px;
-    
+    padding-bottom: 50px;   
 }
 
 header img {
     margin-left: 30px;
     margin-top: 10px;
-    width: 400px;
-    
-    
+    width: 400px;  
 }
 
 header p {
@@ -42,6 +44,7 @@ header p {
   
 }
 
+/* Configuração do botão de voltar */
 nav {
     display: flex;
     flex-direction: row;
@@ -79,7 +82,7 @@ a:hover {
 }
 
 
-
+/* Altura do rodapé */
 footer {
     height: 45vh;
 }
@@ -93,20 +96,7 @@ footer {
 .texto {
     background-color: #faf3ff;
     padding: 5vh;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.233);
-
-    
-    
-}
-
-#texto1, #texto2 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    
-    flex: 1 1 300px;
-    
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.233); 
 }
 
 
@@ -153,9 +143,7 @@ footer {
 
 }
 
-#menu {
-    display: none;
-}
+
 
 .jogos {
     color: rgb(156, 61, 215);
@@ -165,6 +153,20 @@ footer {
 
 .palavra-especial {
     color: rgb(156, 61, 215);
+}
+
+#texto1, #texto2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+    flex: 1 1 300px;
+    
+}
+
+#menu {
+    display: none;
 }
 
 

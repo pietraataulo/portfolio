@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
     margin: 0px;
     padding: 0px;
@@ -11,11 +13,6 @@
     --azul: #0b3384;
     --murrey: #881B4C;
     --magnolia: #f3dcff;
-}
-
-html {
-    /*background: linear-gradient(45deg, #1a0450, #3f0c6e, #6f0689);
-    height: 100vh;*/
 }
 
 body {
