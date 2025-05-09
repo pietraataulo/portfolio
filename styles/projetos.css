@@ -20,9 +20,17 @@ header {
     /* background-color: #eaf7ff; */
     background-color: #082c43;
     margin-bottom: 50px;
-    height: 20vh;
-
+    
+    display: grid;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.245);
+    
+}
+
+.titulo {
+    font-size: 14px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 header p {
@@ -30,14 +38,47 @@ header p {
     color: #c7efff8d;
 }
 
-h1 {
-    padding-top: 60px;
+h1 {  
     /* color: #2e4d9b; */
     color: #89c9e2;
     /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.478); */
 }
 
-div {
+nav {  
+    margin: 0;
+    width: 160px;
+    padding-top: 20px;    
+
+}
+
+header a { 
+    display: block;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border: 2px solid #67c7e7c3;
+    width: 75px;
+   
+    color: #83b2ef;
+
+    text-decoration: none;
+    font-size: 15px;
+
+    border-radius: 30px;
+    padding: 16px;
+    
+    
+    transition-duration: 0.5s;
+}
+
+header a:hover {
+    background-color: #81c5e2;
+    box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.242);
+    color: #163063;
+
+    transition-duration: 0.5s;
+}
+
+main > div {
     display: grid;
     grid-template-columns: 80vw;
     /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
@@ -62,12 +103,11 @@ section:hover {
 
 img {
     max-width: 80vw;
-    border-radius: 12px 12px 0px 0px;
-
-    
+    border-radius: 12px 12px 0px 0px;   
 }
 
 h2 {
+    padding-top: 10px;
     color: rgb(53, 109, 111);
 }
 
@@ -84,14 +124,29 @@ footer {
 @media screen and (min-width: 800px) {
 
     header {
-        height: 25vh;
+        height: 28vh;
     }
 
     header p {
-        padding: 8px;
+        padding: 6px;
     }
 
-    div {
+    .titulo {
+        font-size: 17px;
+        padding-top: 0px;
+    }
+
+    nav {
+        padding-top: 30px;  
+    }
+
+    header a {
+        margin-left: 40px;
+        font-size: 20px;
+        width: 85px;
+    }
+
+    main div {
         display: grid;
         grid-template-columns: 30vw 30vw;
         gap: 7%;
