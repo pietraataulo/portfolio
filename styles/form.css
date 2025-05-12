@@ -15,14 +15,53 @@ html {
 }
 
 header {
-    height: 30vh;
-    display: flex;
+    height: 20vh;
+    display: grid;
     align-items: center;
+    margin-bottom: 50px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 160px;
+    
+    margin-top: 15px;
+
+}
+
+a { 
+    text-align: center;
+    display: block;
+    margin-left: 25px;
+    box-sizing: border-box;
+    border: 2px solid rgba(140, 230, 255, 0.779);
+    width: 75px;
+   
+    /* background-color: #692a85; */
+    color: #d6f5ff;
+
+    text-decoration: none;
+    font-size: 15px;
+
+    border-radius: 30px;
+    padding: 16px;  
+    
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    background-color: #98c4ea;
+    box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.242);
+    color: #114157;
+
+    transition-duration: 0.5s;
 }
 
 h1 {
-    margin: auto;
-    color: #c3b6fa;
+    text-align: center;
+    color: #e4deff;
 }
 
 form {
@@ -33,8 +72,9 @@ form {
     
     margin: auto;
 
-    width: 500px;
+    width: 400px;
     text-align: center;
+
     
 }
 
@@ -44,12 +84,15 @@ input {
     border-radius: 12px;
     border-width: 0.3px;
     height: 35px;  
-    width: 70%;
-
-    
-    
+    width: 70%; 
     
 }
+
+input[type=text], [type=email] {
+    text-indent: 6px;  
+}
+
+
 
 section {
     padding: 20px;
@@ -65,7 +108,7 @@ p {
 
 
 form div {
-    width: 70%;
+    width: 80%;
     margin: auto;
     text-align: right;
     padding: 10px;
@@ -79,11 +122,12 @@ form div {
 }
 
 .button {
+   
     background-color: rgb(234, 216, 255);
     color: #682faa;
     margin-top: 20px;
     border-radius: 14px;
-    width: 60px;
+    width: 55px;
     font-size: 15px;
     border-width: 0px;
     transition-duration: 0.5s;
@@ -98,5 +142,27 @@ form div {
     /* box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.244); */
 
     transition-duration: 0.5s;
+}
+
+/* Media query para telas grandes */
+@media screen and (min-width: 800px) {
+
+    form {
+        width: 500px;
+    
+    }
+
+    form div {
+        width: 70%;
+    
+    }
+
+    a {
+        margin-top: 20px;
+        margin-left: 40px;
+        width: 85px;
+        font-size: 19px;
+    }
+
 }
 

@@ -17,7 +17,7 @@ html {
 }
 
 header {
-    /* background-color: #eaf7ff; */
+
     background-color: #082c43;
     margin-bottom: 50px;
     
@@ -29,7 +29,7 @@ header {
 .titulo {
     font-size: 14px;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 40px;
 }
 
@@ -47,13 +47,14 @@ h1 {
 nav {  
     margin: 0;
     width: 160px;
-    padding-top: 20px;    
+       
 
 }
 
 header a { 
+    margin-top: 15px;
     display: block;
-    margin-left: 30px;
+    margin-left: 20px;
     box-sizing: border-box;
     border: 2px solid #67c7e7c3;
     width: 75px;
@@ -137,10 +138,11 @@ footer {
     }
 
     nav {
-        padding-top: 30px;  
+        /* padding-top: 30px;   */
     }
 
     header a {
+        margin-top: 30px;
         margin-left: 40px;
         font-size: 20px;
         width: 85px;
