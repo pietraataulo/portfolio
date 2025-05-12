@@ -71,6 +71,7 @@ a {
     transition-duration: 0.5s;
 }
 
+/* Pseudoclasse do botão Voltar */
 a:hover {
     background-color: #f3dcff;
     box-shadow: -3px 5px 3px rgba(0, 0, 0, 0.242);
@@ -85,28 +86,30 @@ footer {
     height: 45vh;
 }
 
+/* Configuração da primeira seção */
 .top {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
+/* Configuração das seções com texto */
 .texto {
     background-color: #faf3ff;
     padding: 5vh;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.233); 
 }
 
-
+/* Configuração do parágrafo dentro da seção */
 .texto p {
     font-size: 16px;
-    width: 350px; /* Arrumar isso */
+    width: 350px;
     line-height: 25px;
     margin: 40px;
     
 }
 
-
+/* Configuração da imagem principal */
 .imagem-fundo {
     background-image: url(../imagens/temporario-port.jpg);
     background-size: cover;
@@ -124,6 +127,7 @@ footer {
 
 }
 
+/* Configuração das imagens menores */
 .imagem-lado {
     border-radius: 3px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.27);
@@ -132,17 +136,7 @@ footer {
     margin: 20px;
 }
 
-.material-symbols-outlined {
-    float: right;
-    margin: 10px;
-    background-color: #faf3ff;
-    border-radius: 2px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.241);
-
-}
-
-
-
+/* Textos especiais */
 .jogos {
     color: rgb(156, 61, 215);
     font-family: "Pixelify Sans", sans-serif;
@@ -153,6 +147,7 @@ footer {
     color: rgb(156, 61, 215);
 }
 
+/* Configuração do flexbox das seções */
 #texto1, #texto2 {
     display: flex;
     justify-content: center;
@@ -163,17 +158,9 @@ footer {
     
 }
 
-#menu {
-    display: none;
-}
-
 
 /* Media query para telas grandes */
 @media screen and (min-width: 800px) {
-
-    #menu {
-        display: none;
-    }
     
     .texto p {
         margin-top: 20px;

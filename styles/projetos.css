@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Configuração global */
 * {
     margin: 0px;
     padding: 0px;
@@ -16,6 +17,7 @@ html {
     /* height: 100%; */
 }
 
+/* Cabeçalho */
 header {
 
     background-color: #082c43;
@@ -26,6 +28,7 @@ header {
     
 }
 
+/* Caixa com o título e um parágrafo embaixo */
 .titulo {
     font-size: 14px;
     margin: auto;
@@ -33,11 +36,13 @@ header {
     padding-bottom: 40px;
 }
 
+/* Parágrafo do cabeçalho */
 header p {
     padding: -2px;
     color: #c7efff8d;
 }
 
+/* Título */
 h1 {  
     /* color: #2e4d9b; */
     padding-top: 10px;
@@ -45,13 +50,13 @@ h1 {
     /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.478); */
 }
 
+/* Navegação */
 nav {  
     margin: 0;
     width: 160px;
-       
-
 }
 
+/* Link do cabeçalho (botão Voltar) */
 header a { 
     display: block;
     margin-left: 30px;
@@ -72,6 +77,7 @@ header a {
     transition-duration: 0.5s;
 }
 
+/* Pseudoclasse do botão Voltar */
 header a:hover {
     background-color: #aee4fb;
     box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.242);
@@ -80,6 +86,7 @@ header a:hover {
     transition-duration: 0.5s;
 }
 
+/* Configuração da primeira div (caixa) dentro da tag main */
 main > div {
     display: grid;
     grid-template-columns: 80vw;
@@ -88,6 +95,7 @@ main > div {
     justify-content: center;
 }
 
+/* Configuração das seções */
 section {
     background-color: rgb(254, 251, 247);
     /* border: 2px solid rgba(26, 29, 176, 0.701); */
@@ -96,27 +104,31 @@ section {
     transition-duration: .5s;
 }
 
+/* Pseudoclasse das seções */
 section:hover {
     transform: scale(102%);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.44);
     transition-duration: .5s;
 }
 
-
+/* Configuração das imagens */
 img {
     max-width: 80vw;
     border-radius: 12px 12px 0px 0px;   
 }
 
+/* Título dentro das seções */
 h2 {
     padding-top: 10px;
     color: rgb(53, 109, 111);
 }
 
+/* Parágrafo da seção */
 section p {
     padding: 14px;
 }
 
+/* Rodapé */
 footer {
     height: 20vh;
 }
@@ -148,7 +160,8 @@ footer {
         font-size: 20px;
         width: 85px;
     }
-
+    
+    /* Configuração de todas as divs dentro da main */
     main div {
         display: grid;
         grid-template-columns: 30vw 30vw;

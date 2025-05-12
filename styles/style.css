@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Configurações globais */
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +9,7 @@
     text-align: center;
 }
 
+/* Variáveis para guardar a paleta de cores */
 :root {
     --roxo: #3d2279;
     --azul: #0b3384;
@@ -19,15 +21,18 @@ body {
     background-repeat: no-repeat;
 }
 
+/* Cabeçalho */
 header {
     padding-top: 90px;
+
+    /* Degradê de fundo */
     background: linear-gradient(45deg, #1a0450, #3f0c6e, #6f0689);
     height: 97.2vh;
 
-    /*margin-top: 120px; */
     color: var(--magnolia);
 }
 
+/* Navegação (caixa para links) */
 nav {
     display: flex;
     flex-direction: column;
@@ -37,12 +42,11 @@ nav {
     margin-top: 40px;
 }
 
+/* Configuração dos links (sobre mim, formação, projetos, fale comigo) */
 a { 
     margin-top: 20px;
     box-sizing: border-box;
     border: 2px solid #dea0ffc3;
-    /*border-width: 2px;
-    /*background-color: #f3dcff;*/
     color: var(--magnolia);
 
     text-decoration: none;
@@ -54,6 +58,7 @@ a {
     transition-duration: 0.5s;
 }
 
+/* Link com pseudoclasse (passar o mouse em cima) */
 a:hover {
     background-color: #f3dcff;
     box-shadow: -3px 5px 3px rgba(0, 0, 0, 0.242);
@@ -62,6 +67,7 @@ a:hover {
     transition-duration: 0.5s;
 }
 
+/* Rodapé do site */
 footer {
     padding: 2px;
     font-size: 14px;

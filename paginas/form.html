@@ -9,42 +9,44 @@
 <body>
     <header>
         <nav>
-            <a href="../index.html" target="self">Voltar</a>
+            <!-- Link para voltar para página inicial -->
+            <a href="../index.html">Voltar</a>
         </nav>
         <h1>Vamos Conversar!</h1>
     </header>
     <main>
-
-        <div class="teste">
+        <div class="div-externa">
+            <!-- Formulário -->
             <form action="#" autocomplete="off">
-            
+                <!-- Parte superior (seção para inputs) -->
                 <section>
+                    <!-- Caixa com input Nome -->
                     <div>
                         <label for="nome">Nome:</label>
                         <input type="text" name="nome" id="nome">
                     </div>
+                    <!-- Caixa com input Email -->
                     <div>
                         <label for="email">Email:</label>
                         <input type="email" name="email" id="email">
                     </div>
+                    <!-- Caixa com input Mensagem -->
                     <div>
                         <label for="mensagem">Mensagem:</label>
                         <input type="text" name="mensagem" id="mensagem" placeholder="Alguma coisa legal">
                     </div>
                 </section>
                    
-
-                    <container class="box-btn">
-                        <input type="button" value="Enviar" class="button" onclick="Enviar()">
-                    </container>
-                    
-                
-            
+                <!-- Parte inferior (botão enviar) -->
+                <container class="box-btn">
+                    <input type="button" value="Enviar" class="button" onclick="Enviar()">
+                </container>       
             </form>
         </div>
     </main>
 
     <script>
+        // Função que mostra uma mensagem ao clicar no botão Enviar
         function Enviar() {
             alert("Formulário ilustrativo");
         }

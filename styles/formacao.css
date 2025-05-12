@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Configuração global */
 * {
     margin: 0px;
     padding: 0px;
@@ -10,36 +11,31 @@
 }
 
 body {
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat; 
 }
 
 html {
     background-image: linear-gradient(to top, #caa1ff ,  #f7efff, white);
     color: #2f2036;
-  
     
-   
     background-size: cover;
 }
 
+/* Cabeçalho */
 header {
     margin-top: 20px;
     margin-bottom: 120px;
     display: grid;
 }
 
+/* Título */
 h1 {
-    /* #49236f 
-       #faf6ff
-    */
     font-size: 28px;
     color: #552f9b;
     margin-top: 40px;
-    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.321); */
-
 }
 
+/* Navegação (caixa para o link) */
 nav {
     display: flex;
     flex-direction: row;
@@ -50,6 +46,7 @@ nav {
 
 }
 
+/* Link (botão voltar) */
 a { 
     display: block;
     margin-left: 30px;
@@ -68,6 +65,7 @@ a {
     transition-duration: 0.5s;
 }
 
+/* Pseudoclasse do botão Voltar */
 a:hover {
     background-color: #3d257e;
     box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.242);
@@ -76,6 +74,7 @@ a:hover {
     transition-duration: 0.5s;
 }
 
+/* Conteúdo principal */
 main {
     display: grid;
     grid-template-columns: 80vw;
@@ -87,6 +86,7 @@ main {
     
 }
 
+/* Configuração das seções */
 section {
     background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.159);
@@ -96,21 +96,25 @@ section {
     width: 100%;
 }
 
+/* Título das seções */
 h2 {
     color: #806dd5;
     margin-bottom: 0px;
 }
 
+/* Título menor dentro das seções */
 h3 {
     color: #4b909c;
     
 }
 
+/* Parágrafos */
 p {
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
+/* Rodapé */
 footer {
     height: 10vh;
 }
@@ -142,14 +146,15 @@ footer {
         margin-bottom: 30px;
         
     }
-
+    
+    /* Seção do meio */
     .middle {
         display: flex;
         flex-flow: column;
         justify-content: space-between;
     }
 
-
+    /* Seção inferior */
     .bottom {
         padding: 10px;
         margin-top: 10px;
@@ -157,7 +162,8 @@ footer {
         grid-column-start: 1;
         grid-column-end: 3;
     }
-
+    
+    /* Parágrafo da seção inferior */
     .bottom p {
         margin-left: 50px;
         margin-right: 50px;
