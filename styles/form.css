@@ -30,16 +30,16 @@ nav {
     margin: 0;
     width: 160px;
     
-    margin-top: 15px;
-    margin-bottom: 40px;
+   
+    margin-bottom: 15px;
 
 }
 
 a { 
     text-align: center;
     display: block;
-    margin-left: 20px;
-    margin-top: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
     box-sizing: border-box;
     border: 2px solid rgba(140, 230, 255, 0.779);
     width: 70px;
@@ -56,7 +56,7 @@ a {
 }
 
 a:hover {
-    background-color: #98c4ea;
+    background-color: #b6dcfc;
     box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.242);
     color: #114157;
 
