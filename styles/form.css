@@ -12,13 +12,16 @@
 html {
     background-image: linear-gradient(45deg, #3f0224, #300565, #237da3);
     height: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
     height: 20vh;
     display: grid;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 nav {
@@ -28,16 +31,18 @@ nav {
     width: 160px;
     
     margin-top: 15px;
+    margin-bottom: 40px;
 
 }
 
 a { 
     text-align: center;
     display: block;
-    margin-left: 25px;
+    margin-left: 20px;
+    margin-top: 10px;
     box-sizing: border-box;
     border: 2px solid rgba(140, 230, 255, 0.779);
-    width: 75px;
+    width: 70px;
    
     /* background-color: #692a85; */
     color: #d6f5ff;
@@ -60,6 +65,7 @@ a:hover {
 }
 
 h1 {
+    font-size: 26px;
     text-align: center;
     color: #e4deff;
 }
@@ -72,7 +78,9 @@ form {
     
     margin: auto;
 
-    width: 400px;
+    width: 80vw;
+   
+    
     text-align: center;
 
     
@@ -80,17 +88,25 @@ form {
 
 
 input {
-    border-color: rgba(0, 0, 0, 0.437);
-    border-radius: 12px;
-    border-width: 0.3px;
-    height: 35px;  
-    width: 70%; 
+    border-color: rgba(0, 0, 0, 0.514);
+    border-radius: 0px;
+    border-width: 0 0 0.3px 0;
+    height: 22px;  
+    width: 100%; 
+    margin-top: 5px;
     
+}
+
+
+label {
+    font-size: 14px;
+    margin-bottom: 50px;
 }
 
 input[type=text], [type=email] {
     text-indent: 6px;  
 }
+
 
 
 
@@ -109,25 +125,29 @@ p {
 
 form div {
     width: 80%;
+    height: 70px;  
     margin: auto;
-    text-align: right;
-    padding: 10px;
-    
+    margin-bottom: 15px;
+    text-align: start;
+    padding: 20px;
+  
+}
+
+.teste {
+    height: 400px;
 }
 
 .box-btn {
-    margin: 50px;
-    
-   
+    margin: 50px; 
 }
 
-.button {
-   
+.button { 
     background-color: rgb(234, 216, 255);
     color: #682faa;
     margin-top: 20px;
     border-radius: 14px;
     width: 55px;
+    height: 35px;
     font-size: 15px;
     border-width: 0px;
     transition-duration: 0.5s;
@@ -139,13 +159,28 @@ form div {
     color: #f3e7ff;
     
     transform: scale(105%);
-    /* box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.244); */
 
     transition-duration: 0.5s;
 }
 
+
 /* Media query para telas grandes */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
+
+    header {
+        height: 20vh;
+        display: grid;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    nav {
+        margin-bottom: 0px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
 
     form {
         width: 500px;
@@ -154,7 +189,11 @@ form div {
 
     form div {
         width: 70%;
-    
+        height: auto;
+        
+        margin: auto;
+        text-align: right;
+        padding: 20px;
     }
 
     a {
@@ -163,6 +202,15 @@ form div {
         width: 85px;
         font-size: 19px;
     }
+
+    input {
+    border-radius: 12px;
+    border-width: 0.3px;
+    height: 35px;  
+    width: 60%; 
+    
+    }
+
 
 }
 
